@@ -1,0 +1,42 @@
+---
+title: "Smoking Behaviour in Five British Cohort Studies"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(shiny)
+library(DT)
+df <- readRDS("smoking_items.Rds")
+```
+
+```{r, echo = FALSE}
+tabsetPanel(
+  # First tab - Introduction
+  tabPanel("Introduction",
+           br(),
+           includeMarkdown("introduction.md"),
+           br(),
+           HTML('<a href="smoking_items.xlsx" download>Download Database as Excel file</a>')
+  ),
+  # Second tab - Interactive Table
+  tabPanel("Database",
+           br(),
+           HTML('<a href="smoking_items.xlsx" download>Download Database as Excel file</a>'),
+           br(), br(),
+           datatable(df, 
+                     escape = FALSE,
+                     filter = 'top',
+                     options = list(
+                       pageLength = 500,
+                       searchHighlight = TRUE,
+                       scrollX = TRUE,
+                       autoWidth = TRUE,
+                       dom = 'Bfrtip',
+                       selection = 'single'
+                     )
+           )
+  )
+)
+``` 
+

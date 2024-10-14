@@ -1,0 +1,54 @@
+<style>
+/* Reset body and container margins and paddings */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Ensure headers have no top margin and a small bottom margin */
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+/* Style for tabset to remove default padding and margins */
+.tabset {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Full width */
+}
+
+/* Style for tab panels */
+.tab-panel {
+    margin: 0;
+    padding: 0; /* Remove padding */
+    width: 100%; /* Full width */
+}
+
+/* Additional styles for the tabset */
+.tabset > .nav-tabs {
+    margin: 0; /* Remove margins from the tab navigation */
+}
+
+/* Override the container class to remove side margins */
+.container {
+    width: 100%; /* Make the container full width */
+    padding: 0; /* Remove padding from the container */
+}
+
+/* If using Bootstrap, override the default Bootstrap styles */
+.container-fluid {
+    width: 100%; /* Make fluid containers full width */
+    padding-left: 0; /* Remove padding */
+    padding-right: 0; /* Remove padding */
+}
+
+.main-container {
+  width: 100%;
+    max-width: unset;
+  }
+  
+</style>
+
+
