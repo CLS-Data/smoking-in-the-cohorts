@@ -1,0 +1,3 @@
+Repository for GitHub Page containing database of smoking items in five British cohort studies. Information about the items on smoking behaviour was collated for the paper [*Life Course and Cohort Changes in Smoking Behaviour*](https://osf.io/54w6q/) by Liam Wright, Harry Tattan Birch, Loren Kock, and David Bann. 
+
+The website was created by Liam Wright. Please email [Liam](mailto:liam.wright@ucl.ac.uk) with any comments or questions you have.
